@@ -17,9 +17,9 @@ https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
 Для работы требуется запущенная RVC WebUI с поддержкой Gradio API
 
 ## Конфигурация
-secrets.json - данные для авторизации телеграмм бота (https://core.telegram.org/bots)
-voices.json - доступные голоса
-gradio.json - хост Gradio для доступа к API
+- secrets.json - данные для авторизации телеграмм бота (https://core.telegram.org/bots)
+- voices.json - доступные голоса
+- gradio.json - хост Gradio для доступа к API
 
 ## Авторы
 Разработано студентами Уральского Федерального университета (УрФУ)
