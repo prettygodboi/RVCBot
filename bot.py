@@ -2,9 +2,9 @@ from pyrogram import Client, filters, enums
 from gradio_client import Client as GClient
 import os, shutil
 
-from utils.get_secrets import read_secrets
+from utils.read_params import read_secrets, read_gradio_host, read_voices
 
-gradio = GClient("http://localhost:7865/")
+gradio = GClient(read_gradio_host())
 
 secrets = read_secrets()
 app = Client(
@@ -13,7 +13,7 @@ app = Client(
     bot_token=secrets["TOKEN"]
 )
 
-available_voices = {"меддисон": "mad_e400_s5200.pth", "лина" : "Lina_e400.pth"}
+available_voices = read_voices()
 @app.on_message(filters.command(["start"], prefixes=["/", "!"]))
 async def start(client, message):
     await message.reply(
