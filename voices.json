@@ -1,4 +1,5 @@
 {
 	"maddyson" : "mad_e400_s5200.pth",
-	"lina" : "Lina_e400.pth"
+	"lina" : "Lina_e400.pth",
+	"arthas" : "KingArtas_e335_s1005.pth"
 }
